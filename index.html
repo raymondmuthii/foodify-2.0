@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <button id="back-button">&larr; Back</button>
+            <h1>Foodify</h1>
+            <div class="search-group">
+                <input type="text" id="search-input" placeholder="Search for a meal">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="auth-group">
+                <span id="user-greeting" style="display:none;"></span>
+                <button id="signup-btn">Sign Up</button>
+                <button id="login-btn">Login</button>
+                <button id="logout-btn" style="display:none;">Logout</button>
+            </div>
+        </div>
+        <div class="header-accent"></div>
+    </header>
+
+    <div id="content">
+        <!-- Homepage that displays a welcome message -->
+        <div id="homepage">
+            <p>Welcome to <b>Foodify</b>! Discover delicious recipes from around the world. Use the search bar above to find your next meal idea. <br> 
+            You don't know what to cook? <b>Don't worry</b> we've got you, with a wide collection of mouth-watering recipes that are sure to excite<br>
+            your taste buds.
+            </p>
+        </div>
+
+        <!-- Page to display meal details -->
+        <div id="recipe-details">
+            <h2>Recipe Details</h2>
+            <div id="recipe-info">
+                <img id="recipe-image" src="" alt="Recipe Image">
+                <div id="recipe-description">
+                    <h3 id="recipe-title"></h3>
+                    <p id="recipe-ingredients"></p>
+                    <p id="recipe-instructions"></p>
+                    <p id="recipe-nutrition"></p>
+                </div>
+            </div>
+            <h3>Comments</h3>
+            <div id="comments-container"></div>
+            <input type="text" placeholder="comment here">
+        </div>
+        
+        <!-- Login Form -->
+        <div id="login-form" style="display:none;">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required><br><br>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required><br><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup-form" style="display:none;">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" name="name" required><br><br>
+
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required><br><br>
+
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required><br><br>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div id="meal-container">
+            <!-- Recipes will appear here -->
+        </div>
+    </div>
+
+    <!-- Page footer -->
+    <footer>
+        <p>© 2024 Foodify. All rights reserved.</p>
+        <p>Contact us: foodify@foodmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

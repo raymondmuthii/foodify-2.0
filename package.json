@@ -1,0 +1,23 @@
+{
+  "name": "foodify",
+  "version": "1.0.0",
+  "description": "A JSON Server template for your project",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js",
+    "dev": "json-server --watch db/db.json"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "json-server": "^0.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "author": "",
+  "license": "ISC"
+}
