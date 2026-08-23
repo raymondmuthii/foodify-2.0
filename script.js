@@ -16,7 +16,7 @@ const apiHost = 'tasty.p.rapidapi.com';
 
 // Base URL of our own signup/login backend (server.js). Change this if you
 // deploy the backend somewhere other than localhost.
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://foodify-2-0.onrender.com';
 
 // ---------- Session helpers ----------
 // The token + user are kept in localStorage so a refresh doesn't log you out.
